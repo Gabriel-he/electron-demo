@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "gulp": "gulp --gulpfile gulpfile.js",
     "package": "electron-packager . --platform=darwin --arch=x64 --electron-version=1.7.8 --overwrite --ignore=node_modules --ignore=.gitignore",
     "asar": "asar pack electron-quick-start-darwin-x64/electron-quick-start.app/Contents/Resources/app electron-quick-start-darwin-x64/electron-quick-start.app/Contents/Resources/app.asar"
   },
@@ -22,5 +23,12 @@
     "asar": "^0.14.0",
     "electron": "~1.7.8",
     "electron-packager": "^9.1.0"
+  },
+  "dependencies": {
+    "angular-material": "^1.1.5",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "node-xlsx": "^0.11.0"
   }
 }
