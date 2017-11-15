@@ -5,10 +5,12 @@
     <title>Hello World!</title>
     <link rel="stylesheet" href="./style/index.css">
     <script src="./lib/angular/angular.min.js"></script>
-    <script src="./app/index.js"></script>
+    <script src="./js/index.js"></script>
   </head>
   <body ng-app="myapp" ng-controller="myCtrl">
     <h1 id="ttt">Hello World!</h1>
+    <textarea rows="10"></textarea>
+    <button>Write</button>
     <p ng-repeat="i in list">
       this is {{i}}
     </p>
@@ -19,7 +21,7 @@
 
     <script>
       // You can also require other files to run in this process
-      require('./renderer.js')
+      require('./js/renderer.js')
     </script>
   </body>
 </html>
