@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <link rel="stylesheet" href="./style/index.css">
+    <script src="./lib/angular/angular.min.js"></script>
     <script src="./app/index.js"></script>
   </head>
-  <body>
+  <body ng-app="myapp" ng-controller="myCtrl">
     <h1 id="ttt">Hello World!</h1>
+    <p ng-repeat="i in list">
+      this is {{i}}
+    </p>
     <!-- All of the Node.js APIs are available in this renderer process. -->
     We are using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
