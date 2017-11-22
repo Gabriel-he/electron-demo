@@ -7,6 +7,8 @@
     "start": "electron .",
     "gulp": "gulp --gulpfile gulpfile.js",
     "package": "electron-packager . --platform=darwin --arch=x64 --electron-version=1.7.8 --overwrite --ignore=node_modules --ignore=.gitignore",
+    "package-win": "electron-packager . --platform=win32 --arch=ia32 --electron-version=1.7.8 --overwrite --ignore=node_modules --ignore=.gitignore",
+    "package-installer": "node ./script/installer.js",
     "asar": "asar pack electron-quick-start-darwin-x64/electron-quick-start.app/Contents/Resources/app electron-quick-start-darwin-x64/electron-quick-start.app/Contents/Resources/app.asar"
   },
   "repository": "https://github.com/electron/electron-quick-start",
@@ -26,6 +28,7 @@
   },
   "dependencies": {
     "angular-material": "^1.1.5",
+    "electron-winstaller": "^2.6.3",
     "gulp": "^3.9.1",
     "gulp-notify": "^3.0.0",
     "gulp-sass": "^3.1.0",
